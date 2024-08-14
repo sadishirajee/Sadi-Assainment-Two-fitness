@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+}
+
+nav {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #121212;
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #E6533C;
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    gap: 40px;
+    padding: 1px;
+    width: 465px;
+    height: 40px;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 10px 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background-color: #FF5630;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(360deg, #111111 5%, rgba(43, 42, 42, 0) 100%), linear-gradient(180deg, #111111 5%, rgba(43, 42, 42, 0) 100%);
+}
+.hero-discription{
+    max-width: 30%;
+}
+
+.hero-discription h1{
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.hero-discription h1 span{
+    font-family: "Tangerine", cursive;
+   font-weight: 400;
+   font-style: normal;
+    font-size: 7rem;
+}
+.hero-discription p{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.hero-buttons{
+    display: flex;
+    gap: 14px;
+}
+.btn-1, .btn-2{
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 42px;
+    font-size: 1rem;
+}
+.btn-1{
+    background-color: #E6533C;
+}
+.btn-2{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.hero-image{
+    position: relative;
+}
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+}
+.badge {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+.badge1{
+    top: 120px;
+    right: 1px;
+    width: 155px;
+    height: 75px;
+    background: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.badge2{
+    bottom: 80px;
+    left: 1px;
+    background: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.badge p{
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
+.change {
+    background-color: #121212;
+    padding: 50px 0;
+    text-align: center;
+}
+.change h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #ffffff;
+}
+.change .intro{
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+.habit-grid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.habit {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+}
+.habit img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.habit h3{
+    font-size: 18px;
+    color: #ffffff;
+}
+.habit p{
+    font-size: 14px;
+    color: #b0b0b0;
+}
+.extra-mile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #494747;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mile-text{
+    max-width: 40%;
+    text-align: left;
+}
+.mile-text h2{
+    font-size: 48px;
+}
+.mile-text p{
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+.image-run{
+    max-width: 50%;
+}
+.extra-mile .image-run img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* trainings-exercises section */
+.trainings-section{
+    padding: 40px;
+    background-color: #121212;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.train-header{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.train-header h2{
+    font-size: 2.5rem;
+}
+.train-header p{
+    text-align: left;
+    font-size: 0.8rem;
+    color: #b0b0b0;
+}
+.exercise-grid{
+    display: grid;
+    grid-template-areas: 
+        "exercise1 exercise2 exercise2 exercise3"
+        "exercise4 exercise4 exercise5 exercise6";
+    gap: 0;
+}
+.grid-item{
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.exercise1{
+    grid-area: exercise1;
+    background-image: url(images/exercise1.jpg);
+    filter: grayscale(100%) sepia(100%) hue-rotate(120deg);
+}
+.exercise2{
+    grid-area: exercise2;
+    background-image: url(images/exercise2.png);
+    filter: grayscale(100%) sepia(100%) hue-rotate(280deg);
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.exercise3{
+    grid-area: exercise3;
+    background-image: url(images/exercise3.png);
+}
+.exercise4{
+    grid-area: exercise4;
+    background-image: url(images/exercise4.png);
+}
+.exercise5{
+    grid-area: exercise5;
+    background-image: url(images/exercise5.jpg);
+    filter: grayscale(100%) sepia(100%) hue-rotate(45deg);
+}
+.exercise6{
+    grid-area: exercise6;
+    background-image: url(images/exercise6.jpg);
+    filter: grayscale(100%) sepia(100%) hue-rotate(100deg);
+}
+
+.overlay1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.overlay2{
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.overlay3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.overlay4{
+    position: absolute;
+    color: #ffffff;
+    text-align: right;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.overlay5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+.overlay6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+/* calculator section*/
+
+.calculator-section{
+    background-color: #121212;
+}
+.calculator-head{
+    margin-left: 28%;
+    margin-right: 28%;
+    padding: 0%;
+}
+.calculator-head h1{
+    font-size: 2.5em;
+    text-align: left;
+    padding: 0%;
+}
+.calculator-head p{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.bmi-calculator{
+    background-color: #2e2d2d;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0%;
+    text-align: left;
+}
+.bmi-chart, .bmi-form {
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 320px;
+}
+
+.bmi-chart{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.bmi-form{
+    margin-right: 10%;
+}
+
+.bmi-chart h2, .bmi-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.bmi-chart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.bmi-chart table, .bmi-chart th, .bmi-chart td {
+    border: 1px solid #444;
+}
+.bmi-chart th, .bmi-chart td {
+    padding: 10px;
+    text-align: left;
+}
+.bmi-chart td{
+    font-size: 14px;
+}
+.bmi-form form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.bmi-form .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.bmi-form input, .bmi-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* team section */
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-section {
+    padding: 50px 0;
+    background-color: #121212;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #aaa;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #2e2d2d;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.overlay h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-bottom: 0;
+}
+/* footer section */
+
+footer {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .footer-logo h1 {
+    font-size: 2rem;
+    color: #f04a23;
+  }
+  
+  .footer-logo p {
+    margin-top: 10px;
+    line-height: 1.6;
+    max-width: 300px;
+  }
+  
+  .footer-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+  }
+  
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        width: 50%;
+        justify-content: space-around;
+    }
+    .extra-mile {
+        flex-direction: column;
+    }
+
+    .extra-mile .mile-text, .extra-mile .image-run {
+        max-width: 100%;
+    }
+
+    .extra-mile .image-run {
+        margin-top: 20px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-discription {
+        max-width: 80%;
+        text-align: left;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .badge1, .badge2 {
+        transform: translateX(-50%);
+    }
+
+    .badge1 {
+        top: 140px;
+        left: 80%;
+    }
+    .bmi-calculator {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #121212;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-active li {
+        opacity: 1;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .change h2 {
+        font-size: 28px;
+    }
+
+    .habit-grid {
+        flex-direction: column;
+    }
+
+    .habit {
+        max-width: 100%;
+    }
+
+    .extra-mile .mile-text h2 {
+        font-size: 24px;
+    }
+    .hero-discription h1 {
+        font-size: 2rem;
+    }
+
+    .hero-discription p {
+        font-size: 1rem;
+    }
+
+    .btn-1, .btn-2 {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .badge span {
+        font-size: 1.2rem;
+    }
+    .bmi-form .input-group {
+        flex-direction: column;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+      .footer-logo p {
+        max-width: 100%;
+        text-align: center;
+      }
+    
+      .footer-links {
+        margin-top: 20px;
+        text-align: center;
+      }
+    
+      .footer-links h2 {
+        font-size: 1.2rem;
+      }
+    
+      .footer-links ul li {
+        margin-bottom: 8px;
+      }
+}
