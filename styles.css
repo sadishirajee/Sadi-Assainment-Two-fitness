@@ -478,12 +478,12 @@ nav {
 }
 
 .overlay h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 5px;
 }
 
 .overlay p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ddd;
     margin-bottom: 0;
 }
@@ -586,6 +586,10 @@ footer {
         top: 140px;
         left: 80%;
     }
+    .badge2 {
+        bottom: 80px;
+        left: 10%;
+    }
     .bmi-calculator {
         flex-direction: column;
         align-items: center;
@@ -677,21 +681,21 @@ footer {
         align-items: center;
         text-align: left;
       }
-      .footer-logo p {
+    .footer-logo p {
         max-width: 100%;
         text-align: center;
       }
     
-      .footer-links {
+    .footer-links {
         margin-top: 20px;
         text-align: center;
       }
     
-      .footer-links h2 {
+    .footer-links h2 {
         font-size: 1.2rem;
       }
     
-      .footer-links ul li {
+    .footer-links ul li {
         margin-bottom: 8px;
       }
 }
