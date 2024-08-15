@@ -125,22 +125,24 @@ nav {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     padding: 10px;
 }
 .badge1{
     top: 120px;
-    right: 1px;
-    width: 155px;
-    height: 75px;
+    right: -20px;
+    width: 140px;
+    height: 55px;
     background: rgba(48, 48, 48, 0.54);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
 .badge2{
     bottom: 80px;
-    left: 1px;
+    left: -80px;
+    width: 140px;
+    height: 55px;
     background: rgba(48, 48, 48, 0.54);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
