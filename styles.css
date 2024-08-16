@@ -139,6 +139,8 @@ nav {
     backdrop-filter: blur(10px);
 }
 .badge2{
+    align-items: center;
+    display: flex;
     bottom: 80px;
     left: -80px;
     width: 140px;
@@ -146,6 +148,13 @@ nav {
     background: rgba(48, 48, 48, 0.54);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+}
+.badge2 .dot{
+    width: 20px;
+    height: 20px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    margin-right: 16px;
 }
 .badge p{
     font-size: 13px;
